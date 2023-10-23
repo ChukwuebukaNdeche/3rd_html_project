@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center><h1>Login Page</h1></center><hr>
+        <form action="animal_character.html" method="post">
+          <label for="name">FullName:</label><br>
+          <input type="text" id="name" name="FullName"><br><br>
+
+          <label for="phone_number">Phone Number:</label><br>
+          <input type="number" name="number" id="phone_number"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" name="password" id="password" required><br><br>
+          
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label><br><br>
+        
+          <fieldset>
+              <legend>Personal Information</legend>
+              <label for="username">UserName:</label><br>
+              <input type="text" name="username" id="username"><br><br>
+              
+              <label for="DOB">Date Of Birth:</label><br>
+              <input type="date" name="dateOfBirth" id="DOB"><br><br>
+
+              <label for="country">Nationality:</label><br>
+              <select name="country" id="country">
+                <option value="#"></option>
+                <option value="nigeria">Nigeria</option>
+                <option value="canada">Canada</option>
+                <option value="russia">Russia</option>
+                <option value="china">China</option>
+                <option value="ghana">Ghana</option>
+                <option value="mexico">Mexico</option>
+                <option value="usa">United States of America</option>
+              </select>
+          </fieldset><br>
+          <label for="comment">Please leave a comment</label><br>
+          <textarea name="comment" id="comment" cols="50" rows="10"></textarea><br>
+          <button type="submit">SUBMIT</button>
+    </form>
+    </div>
+</body>
+</html>
